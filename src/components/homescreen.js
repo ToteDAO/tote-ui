@@ -1,12 +1,11 @@
 import React from "react";
-import OffcanvasExample from "./OffcanvasExample"
+import Sidebar from "./sidebar"
 
 function homescreen() {
   return (
     <div>
-      <h1>Home</h1>
       <div>
-<OffcanvasExample></OffcanvasExample>
+<Sidebar></Sidebar>
       </div>
     </div>
   );

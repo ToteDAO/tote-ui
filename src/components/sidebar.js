@@ -12,7 +12,7 @@ function OffcanvasExample() {
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">ToteDAO Logo</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -21,14 +21,16 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Hi User!
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
-                  <NavDropdown
+                  <Nav.Link href="#action1">Create Bounty</Nav.Link>
+                  <Nav.Link href="#action2">Join Bounty</Nav.Link>
+                  <Nav.Link href="#action3">Read Reviews</Nav.Link>
+
+                  {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
@@ -40,9 +42,9 @@ function OffcanvasExample() {
                     <NavDropdown.Item href="#action5">
                       Something else here
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </Nav>
-                <Form className="d-flex">
+                {/* <Form className="d-flex">
                   <Form.Control
                     type="search"
                     placeholder="Search"
@@ -50,7 +52,7 @@ function OffcanvasExample() {
                     aria-label="Search"
                   />
                   <Button variant="outline-success">Search</Button>
-                </Form>
+                </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
