@@ -66,6 +66,8 @@ const devfolioReviewsCount=4;
 export default function Album() {
     const [redirectTriggeredNewProposal, setRedirectNewProposal] = React.useState(false);
     const [redirectTriggeredOpenProposal, setRedirectOpenProposal] = React.useState(false);
+    const [redirectToHome, setredirectToHome] = React.useState(false);
+
     const classes = useStyles();
     const [redirectToAddReview, setredirectToAddReview] = React.useState(false);
 
@@ -162,6 +164,8 @@ export default function Album() {
                                 </Card>
                             </Grid>
 
+                            {redirectToHome && <Redirect to="/"/>}
+                            <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> Back </Button>
 
                         
                     </Grid>

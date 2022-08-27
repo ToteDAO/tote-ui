@@ -65,7 +65,7 @@ export default function Album() {
                     <Grid container spacing={3}>
                     <Typography component="h1" variant="h4"  color="textPrimary" gutterBottom>
                     Review by Username
-                        </Typography>
+                    </Typography>
                     <Grid item key="P" xs={6}>
                         
                     <Grid item key="1" xs={12}>

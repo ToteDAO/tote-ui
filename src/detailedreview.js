@@ -68,6 +68,7 @@ export default function Album() {
     const [redirectTriggeredOpenProposal, setRedirectOpenProposal] = React.useState(false);
     const classes = useStyles();
     const [redirectToAddReview, setredirectToAddReview] = React.useState(false);
+    const [redirectToHome, setredirectToHome] = React.useState(false);
 
 
     return (
@@ -157,7 +158,9 @@ export default function Album() {
                                 </Card>
                             </Grid>
                         </Grid>
-                           
+                        {redirectToHome && <Redirect to="/overallreview"/>}
+                            <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> Back </Button>
+
                     </Grid>
                 </Container>
             </main>

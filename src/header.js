@@ -59,14 +59,10 @@ export default function Header() {
     };
 
     const toteDaoLogo = (
-
-            <a href="/" display="Tote DAO" >
+            
                 <Typography variant="h6" component="h1" className={logo}>
                 Tote DAO
-
                 </Typography>
-            
-            </a>
     );
 
     const getMenuButtons = () => {
@@ -87,7 +83,7 @@ export default function Header() {
 
     return (
         <header>
-            {/* <Login /> */}
+             {/* <Login />  */}
             <AppBar className={header}>{displayDesktop()}</AppBar>
         </header>
     );

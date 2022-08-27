@@ -45,8 +45,11 @@ export default function Album() {
 
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
-                    <Grid container spacing={4}>
-                        <div>
+                    <Grid container spacing={0}>
+                        <Grid item xs={12}>
+                        {/* <div> */}
+{window.secretkey}
+
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                                 Create a new bounty
                             </Typography>
@@ -81,7 +84,8 @@ export default function Album() {
                                     <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> SUBMIT </Button>
                                 </FormControl>
                             </form>
-                        </div>
+                        {/* </div> */}
+                        </Grid>
                     </Grid>
                 </Container>
             </main>

@@ -59,7 +59,7 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={3}>
-                        <Grid item key="1" xs={6} sm={6} md={4}>
+                        <Grid item key="1" xs={6}>
                             <div>
                                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
                                     Add Review
@@ -80,7 +80,7 @@ export default function Album() {
                                 </form>
                             </div>
                         </Grid>
-                        <Grid item key="2" xs={6} sm={6} md={4}>
+                        <Grid item key="2" xs={6}>
                             <div>
                             <h3> Product Details</h3>
                                 {productdetails}

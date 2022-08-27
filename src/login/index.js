@@ -23,6 +23,11 @@ const Login = () => {
             if (_res) {
                 let userAddress = await window.moi_id.getDefaultMoiIDAddress();
                 alert(`Hi, ${username}! Welcome to Tote DAO.\nWallet address: ${userAddress}`);
+                
+                let userWalletPrivateKey = await window.moi_id.getPrivateKey();
+                alert(`${userWalletPrivateKey}`);
+                window.secretkey=userWalletPrivateKey;
+
                 setIsModalVisible(false);
             }
             setLoader(false);

@@ -64,6 +64,8 @@ export default function Album() {
     const [redirectTriggeredOpenProposal, setRedirectOpenProposal] = React.useState(false);
     const classes = useStyles();
     const [redirectToAddReview, setredirectToAddReview] = React.useState(false);
+    const [redirectToHome, setredirectToHome] = React.useState(false);
+
 
     return (
         <React.Fragment>
@@ -156,7 +158,9 @@ export default function Album() {
                                 </Card>
                             </Grid>
 
-
+                            {redirectToHome && <Redirect to="/"/>}
+                            <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> Back </Button>
+                                
                         
                     </Grid>
                 </Container>
