@@ -9,6 +9,7 @@ import { Route, Switch,BrowserRouter } from "react-router-dom";
 import MultiActionAreaCard from './home';
 import JoinBounty from './joinbounty';
 import Reviews from './reviews';
+import AddReview from './addreview';
   
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Route  path="/createbounty*" component={CreateBounty} />
               <Route  path="/joinbounty*" component={JoinBounty} />
               <Route  path="/reviews*" component={Reviews} />
+              <Route  path="/addreview*" component={AddReview} />
 
 
               {/*<Route  path="/myProperties" element={<MyProperties />} />*/}

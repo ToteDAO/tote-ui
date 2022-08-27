@@ -9,9 +9,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [isModalVisible, setIsModalVisible] = useState(true);
     const [loader, setLoader] = useState(false);
-    const handleOk = () => {
-        setIsModalVisible(false);
-    };
+   
 
     const handleCancel = () => {
         setIsModalVisible(false);
