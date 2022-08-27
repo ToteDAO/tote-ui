@@ -78,11 +78,9 @@ export default function Album() {
                 <div className={classes.heroContent}>
                     <Container maxWidth="sm">
                         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                            Postive Negative Reviews
+                            Reviews
                         </Typography>
-                        <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                           This is an overall review for the products
-                        </Typography>
+                        
                         
                     </Container>
                 </div>
@@ -90,7 +88,9 @@ export default function Album() {
                     {/* End hero unit */}
                     <Grid container spacing={3}>
                         <Grid item key="P" xs={6}>
-                            <h3>Positive Reviews</h3>
+                        <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+                        Positive Reviews
+                        </Typography>
                         <Grid item key="1" xs={12}>
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
@@ -123,7 +123,9 @@ export default function Album() {
                             </Grid>
                         </Grid>
                       <Grid item key="N"  xs={6}>
-                        <h3>Negative Reviews</h3>
+                      <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+                      Negative Reviews
+                        </Typography>
                       <Grid item key="3" xs={12}>
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>

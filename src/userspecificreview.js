@@ -18,6 +18,10 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import {Redirect} from 'react-router-dom';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -58,24 +62,60 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={3}>
-                        <Grid item key="1" xs={6} sm={6} md={4}>
-                            <div>
-                                <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                                    Review by Username
-                                </Typography>
-                                <br/>
-
-<div>
-    <ul>
-        <li>Appearance</li>
-        <li>Quality</li>
-        <li>Cost worthiness</li>
-        <li>Others</li>
-    </ul>
-</div>
-                                
-                            </div>
-                        </Grid>
+                    <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+                    Review by Username
+                        </Typography>
+                    <Grid item key="P" xs={6}>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Appearance
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Appearance
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Quality
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Quality
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Cost worthiness
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Cost worthiness
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Others
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Others
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    </Grid>
+                       
                         
                     </Grid>
                     If you find this review helpful, like and get reward 

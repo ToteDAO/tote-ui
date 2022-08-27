@@ -72,9 +72,10 @@ export default function Album() {
                                     <TextField id="bounty-review-nums" label="Others" variant="outlined"/> <br/>    
 
                                     <FormControl className={classes.formControl}>
+                                    <TextField id="bounty-prod-image" label="Product Image" type="file" variant="outlined"/><br/>
+
                                     {redirectToHome && <Redirect to="/"/>}
                                         <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> SUBMIT </Button>
-                                        <TextField id="bounty-prod-image" label="Product Image" type="file" variant="outlined"/>
                                     </FormControl>
                                 </form>
                             </div>
