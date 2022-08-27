@@ -53,18 +53,20 @@ export default function Header() {
         return (
             <Toolbar className={toolbar}>
                 {toteDaoLogo}
-                <div>
-                    {getMenuButtons()}
-                </div>
+                
             </Toolbar>
         );
     };
 
     const toteDaoLogo = (
 
-        <Typography variant="h6" component="h1" className={logo} onClick={() => Redirect("/")}>
-            Tote DAO
-        </Typography>
+            <a href="/" display="Tote DAO" >
+                <Typography variant="h6" component="h1" className={logo}>
+                Tote DAO
+
+                </Typography>
+            
+            </a>
     );
 
     const getMenuButtons = () => {
