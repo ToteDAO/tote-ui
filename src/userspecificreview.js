@@ -22,6 +22,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,68 +63,78 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={3}>
-                    <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+                    <Typography component="h1" variant="h4"  color="textPrimary" gutterBottom>
                     Review by Username
                         </Typography>
                     <Grid item key="P" xs={6}>
-                    <Grid item key="1" xs={12}>
-                    <Card className={classes.card}>
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                        Appearance
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                        Appearance
-                        </Typography>
-                    </CardContent>
-                    </Card>
-                    </Grid>
-                    <Grid item key="1" xs={12}>
-                    <Card className={classes.card}>
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                        Quality
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                        Quality
-                        </Typography>
-                    </CardContent>
-                    </Card>
-                    </Grid>
-                    <Grid item key="1" xs={12}>
-                    <Card className={classes.card}>
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                        Cost worthiness
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                        Cost worthiness
-                        </Typography>
-                    </CardContent>
-                    </Card>
-                    </Grid>
-                    <Grid item key="1" xs={12}>
-                    <Card className={classes.card}>
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                        Others
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                        Others
-                        </Typography>
-                    </CardContent>
-                    </Card>
-                    </Grid>
-                    </Grid>
-                       
                         
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Appearance
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Appearance
+                        </Typography>
+                    </CardContent>
+                    </Card>
                     </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Quality
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Quality
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Cost worthiness
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Cost worthiness
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <Grid item key="1" xs={12}>
+                    <Card className={classes.card}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                        Others
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        Others
+                        </Typography>
+                    </CardContent>
+                    </Card>
+                    </Grid>
+                    <CardContent>
+                    <Typography variant="body2" color="text.secondary">
                     If you find this review helpful, like and get reward 
-                    <Button variant="contained" color="primary" onClick="{() => ())}"> Like</Button>
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                        <Button variant="contained" color="primary" icon={<FavoriteIcon />} onClick="{() => ())}"> Like</Button>
 
+                        </Typography> 
+                    </CardContent>
                     {redirectToHome && <Redirect to="/"/>}
                     <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}>BACK</Button>
                    
+                    </Grid>
+                    
+                    
+                        
+                    </Grid>
+
+                  
                 </Container>
             </main>
             {/*/!* Footer *!/*/}
