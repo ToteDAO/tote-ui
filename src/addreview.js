@@ -58,33 +58,32 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={3}>
-                    <Grid item key="1" xs={6} sm={6} md={4}>
-                        <div>
-                            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                                Add Review
-                            </Typography>
-                            <br/>
-                            <form className={classes.root} noValidate autoComplete="off">
-                                <TextField id="bounty-co-name" label="Appearance" variant="outlined"/> <br/>
-                                <TextField id="bounty-prod-name" label="Quality" variant="outlined"/> <br/>
-                                <TextField id="bounty-prod-link" label="Cost worthiness" variant="outlined"/> <br/>
-                                <TextField id="bounty-review-nums" label="Others" variant="outlined"/> <br/>    
-                                <TextField id="bounty-prod-image" label="Product Image" type="file" variant="outlined"/>
+                        <Grid item key="1" xs={6} sm={6} md={4}>
+                            <div>
+                                <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                                    Add Review
+                                </Typography>
+                                <br/>
+                                <form className={classes.root} noValidate autoComplete="off">
+                                    <TextField id="bounty-co-name" label="Appearance" variant="outlined"/> <br/>
+                                    <TextField id="bounty-prod-name" label="Quality" variant="outlined"/> <br/>
+                                    <TextField id="bounty-prod-link" label="Cost worthiness" variant="outlined"/> <br/>
+                                    <TextField id="bounty-review-nums" label="Others" variant="outlined"/> <br/>    
 
-                                <FormControl className={classes.formControl}>
-                                {redirectToHome && <Redirect to="/"/>}
-                                    
-                                    <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> SUBMIT </Button>
-                                </FormControl>
-                            </form>
-                        </div>
-                    </Grid>
-                    <Grid item key="2" xs={6} sm={6} md={4}>
-                        <div>
-                           <h3> Product Details</h3>
-                            {productdetails}
-                        </div>
-                    </Grid>
+                                    <FormControl className={classes.formControl}>
+                                    {redirectToHome && <Redirect to="/"/>}
+                                        <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> SUBMIT </Button>
+                                        <TextField id="bounty-prod-image" label="Product Image" type="file" variant="outlined"/>
+                                    </FormControl>
+                                </form>
+                            </div>
+                        </Grid>
+                        <Grid item key="2" xs={6} sm={6} md={4}>
+                            <div>
+                            <h3> Product Details</h3>
+                                {productdetails}
+                            </div>
+                        </Grid>
                     </Grid>
                    
                 </Container>

@@ -17,6 +17,7 @@ import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
+import {Redirect} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Album() {
     const classes = useStyles();
     const [age, setAge] = React.useState('');
+    const [redirectToHome, setredirectToHome] = React.useState(false);
 
     const handleChange = (event) => {
         setAge(event.target.value);
@@ -56,7 +58,7 @@ export default function Album() {
                                 <TextField id="bounty-review-nums" label="Number of bounties sponsored" variant="outlined"/> <br/>
                                 <TextField id="bounty-review-amt" label="Amount sponsored per bounty" variant="outlined"/> <br/>
                                 <FormControl className={classes.formControl}>
-                                    
+
                                 {/* <InputLabel shrink id="demo-simple-select-placeholder-label-label">Target age group</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-placeholder-label-label"
@@ -74,7 +76,9 @@ export default function Album() {
                                 <FormHelperText>Label + placeholder</FormHelperText> */}
                                     
                                     <TextField id="bounty-prod-image" label="Product Image" type="file" variant="outlined"/>
-                                    <Button variant="contained" color="primary"> SUBMIT </Button>
+                                {redirectToHome && <Redirect to="/"/>}
+                                    
+                                    <Button variant="contained" color="primary" onClick={() => setredirectToHome(true)}> SUBMIT </Button>
                                 </FormControl>
                             </form>
                         </div>

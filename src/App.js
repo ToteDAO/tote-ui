@@ -10,7 +10,8 @@ import MultiActionAreaCard from './home';
 import JoinBounty from './joinbounty';
 import Reviews from './reviews';
 import AddReview from './addreview';
-  
+import Overallreview  from './overallreview'
+import Detailedreview from './detailedreview'
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
               <Route  path="/joinbounty*" component={JoinBounty} />
               <Route  path="/reviews*" component={Reviews} />
               <Route  path="/addreview*" component={AddReview} />
+              <Route  path="/overallreview*" component={Overallreview} />
+              <Route  path="/detailedreview*" component={Detailedreview} />
 
 
               {/*<Route  path="/myProperties" element={<MyProperties />} />*/}

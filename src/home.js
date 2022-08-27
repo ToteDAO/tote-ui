@@ -71,7 +71,7 @@ export default function MultiActionAreaCard() {
                 </CardActions>
             </Card>
 
-            {redirectToReviews && <Redirect to="/reviews"></Redirect>}
+            {redirectToReviews && <Redirect to="/overallreview"></Redirect>}
             <Card style={{width: "350px"}}  onClick={()=>setredirectToReviews(true)}>
                 <CardActionArea>
                     <CardMedia
