@@ -12,6 +12,8 @@ import Reviews from './reviews';
 import AddReview from './addreview';
 import Overallreview  from './overallreview'
 import Detailedreview from './detailedreview'
+import Userspecificreview from './userspecificreview'
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
               <Route  path="/addreview*" component={AddReview} />
               <Route  path="/overallreview*" component={Overallreview} />
               <Route  path="/detailedreview*" component={Detailedreview} />
+              <Route  path="/userspecificreview*" component={Userspecificreview} />
 
 
               {/*<Route  path="/myProperties" element={<MyProperties />} />*/}

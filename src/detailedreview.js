@@ -89,9 +89,8 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={3}>
-
                         <Grid item key="P" xs={6}>
-                            Positive Reviews
+                            <h3>Positive Reviews</h3>
                         <Grid item key="1" xs={12}>
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
@@ -100,7 +99,7 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/detailedreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review 
                                         </Button>
@@ -115,7 +114,7 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/detailedreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
@@ -124,7 +123,7 @@ export default function Album() {
                             </Grid>
                         </Grid>
                       <Grid item key="N"  xs={6}>
-                      Negative Reviews
+                        <h3>Negative Reviews</h3>
                       <Grid item key="3" xs={12}>
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
@@ -133,7 +132,7 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/detailedreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
@@ -148,7 +147,7 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/detailedreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
