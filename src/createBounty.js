@@ -48,7 +48,6 @@ export default function Album() {
                     <Grid container spacing={0}>
                         <Grid item xs={12}>
                         {/* <div> */}
-{window.secretkey}
 
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                                 Create a new bounty

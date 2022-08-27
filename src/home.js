@@ -15,7 +15,6 @@ export default function MultiActionAreaCard() {
     return (
         
         <div style={{display: "flex", justifyContent : "space-between", padding: "0px 151px"}}>
-{window.secretkey}
             
             {redirectToCommunity && <Redirect to="/createbounty" /> }
             <Card style={{width: "350px"}} onClick={ () => setRedirectToCommunity(true) }>
