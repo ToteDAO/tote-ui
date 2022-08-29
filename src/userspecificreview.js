@@ -42,16 +42,49 @@ export default function Album() {
         setAge(event.target.value);
     };
     
-    var productdetails;
+var Appearance;
+var Quality;
+var CostWorthiness;
+var Others;
+var Username;
+
     var path = window.location.pathname;
     var params = path.split('/');
     var id = params[params.length-1];
-    if(id==1)
-    productdetails ="The iPhone 13 also comes with dual 12MP cameras. There are 12MP ultra-wide, wide, and telephoto cameras on both the iPhone 13 Pro and iPhone 13 Pro Max";
+    if(id==="1")
+    {
+        Username="@madhu";
+        Appearance="Good";
+        Quality="Best";
+        CostWorthiness="Awesome";
+        Others="All good";
+    }
     else if(id==2)
-    productdetails ="Lipton iced tea is the perfect addition for any of your meals because of its crisp and refreshing taste. So don’t just default to the usual, enjoy the superior taste of fresh-brewed tea and choose Lipton Iced Tea. With a range of flavors available, our iced tea selection is sure to be a great treat for the whole family on a hot summer's day!";
+    {
+        Username="@rocky";
+        Appearance="Amazing";
+        Quality="Best";
+        CostWorthiness="Awesome";
+        Others="All good";
+    }
     else if(id==3)
-    productdetails ="The Devfolio Beta Program is open to all users. We’re looking for community members especially those who use have participated in various initiatives through the Devfolio platform.";
+    {
+        Username="@buck";
+
+        Appearance="Poor";
+        Quality="Bad";
+        CostWorthiness="Not at all";
+        Others="Very bad";
+    }
+    else 
+    {
+        Username="@mike";
+
+        Appearance="Poor";
+        Quality="Bad";
+        CostWorthiness="Not at all";
+        Others="Very bad";
+    }
 
 
     return (
@@ -64,7 +97,7 @@ export default function Album() {
                     {/* End hero unit */}
                     <Grid container spacing={3}>
                     <Typography component="h1" variant="h4"  color="textPrimary" gutterBottom>
-                    Review by Username
+                    Review by {Username}
                     </Typography>
                     <Grid item key="P" xs={6}>
                         
@@ -75,7 +108,7 @@ export default function Album() {
                         Appearance
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                        Appearance
+                        {Appearance}
                         </Typography>
                     </CardContent>
                     </Card>
@@ -87,7 +120,7 @@ export default function Album() {
                         Quality
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                        Quality
+                        {Quality}
                         </Typography>
                     </CardContent>
                     </Card>
@@ -99,7 +132,7 @@ export default function Album() {
                         Cost worthiness
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                        Cost worthiness
+                        {CostWorthiness}
                         </Typography>
                     </CardContent>
                     </Card>
@@ -111,7 +144,7 @@ export default function Album() {
                         Others
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                        Others
+                        {Others}
                         </Typography>
                     </CardContent>
                     </Card>

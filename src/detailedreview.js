@@ -96,7 +96,7 @@ export default function Album() {
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            by Username Positive 1
+                                            by @madhu - Good
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
@@ -111,11 +111,11 @@ export default function Album() {
                             <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            by Username Positive 2
+                                            by @rocky - Amazing
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/2"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
@@ -131,11 +131,11 @@ export default function Album() {
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            by Username Negative 1
+                                            by @buck - Poor
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/3"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
@@ -146,11 +146,11 @@ export default function Album() {
                             <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            by Username Negative 2
+                                            by @mike - Pathetic
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        {redirectToAddReview && <Redirect to="/userspecificreview/1"/>}
+                                        {redirectToAddReview && <Redirect to="/userspecificreview/4"/>}
                                         <Button size="small" color="primary" onClick={() => setredirectToAddReview(true)}>
                                             Detailed review
                                         </Button>
